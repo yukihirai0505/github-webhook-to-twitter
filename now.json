@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "name": "github-to-twitter",
+  "alias": "github2twitter.now.sh",
+  "builds": [{ "src": "api/**/*.js", "use": "@now/node" }],
+  "routes": [],
+  "env": {
+    "TWITTER_CONSUMER_KEY": "@twitter-consumer-key",
+    "TWITTER_SECRET": "@twitter-secret",
+    "TWITTER_ACCESS_TOKEN": "@twitter-access-token",
+    "TWITTER_USER_SECRET": "@twitter-user-secret"
+  }
+}
