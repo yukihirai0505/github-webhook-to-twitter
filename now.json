@@ -3,7 +3,13 @@
   "name": "github-to-twitter",
   "alias": "github2twitter.now.sh",
   "builds": [{ "src": "api/**/*.js", "use": "@now/node" }],
-  "routes": [],
+  "routes": [
+    {
+      "src": "/api/webhook.js",
+      "methods": ["POST"],
+      "dest": "/api/webhook.js"
+    }
+  ],
   "env": {
     "TWITTER_CONSUMER_KEY": "@twitter-consumer-key",
     "TWITTER_SECRET": "@twitter-secret",
